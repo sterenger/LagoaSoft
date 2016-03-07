@@ -1,0 +1,50 @@
+<ion-view title="Aktuelle Rechnungen">
+    <ion-content overflow-scroll="true" padding="true" class="has-header">
+        <div>
+            <p>
+                <strong>Im Bearbeitung</strong>
+            </p>
+        </div>
+        <ion-list ng-controller="DataOneController">
+            <ion-item>
+                  <canvas id="StatOne" class="chart chart-pie" data="polarData.data" labels="polarData.labels" legend="true" options="{showTooltips: true}"></canvas>
+                  <p>   
+
+                    </p>
+                <h2>Versandt</h2>
+                <p>8.804,76$</p>
+            </ion-item>
+        </ion-list>
+        <div>
+            <p>
+                <strong>Versandt</strong>
+            </p>
+        </div>
+        <ion-list ng-controller="DataTwoController">
+            <ion-item>
+                  <canvas id="StatTwo" class="chart chart-pie" data="polarData.data" labels="polarData.labels" legend="true" options="{showTooltips: true}"></canvas>
+                  <p>  
+
+                     </p>
+                <h2>Versandt</h2>
+                <p>8.804,76$</p>
+            </ion-item>
+        </ion-list>
+        <div>
+            <p>
+                <strong>Beitreinbung</strong>
+            </p>
+        </div>
+        <ion-list ng-controller="DataThreeController">
+            <ion-item>
+                  <canvas id="StatThree" class="chart chart-pie" data="polarData.data" labels="polarData.labels" legend="true" options="{showTooltips: true}"></canvas>
+                  <p>    
+
+                   </p>
+                <h2>Versandt</h2>
+                <p>8.804,76$</p>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+
+</ion-view>
